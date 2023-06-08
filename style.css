@@ -16,6 +16,7 @@ color: #fff;
     background: url('images/pexels-tranmautritam-69432.jpg');
     height: 85vh;    
     color: #fff;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,18 +38,156 @@ color: #fff;
     font-weight: 900;
     
 }
-.service h3{
-    color: #f5487f;
-    font-size: 25px;
-    font-weight: bold;
-}
-.service-box{
+
+.service-box-1,.service-box-2,.service-box-3,.service-box-4{
     border-radius: 25px; 
     background-color: #bce1fd;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
 }
 .footer{
     background-color: #d8d5d5;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+}
+.box-content{
+    /* border: 3px solid black; */
+    
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:0 ;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.service-box-1::after{
+    background: url('images/pexels-bich-tran-1714341.jpg');
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+}
+.service-box-2::after{
+    background: url('images/pexels-bich-tran-669996.jpg');
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+}
+.service-box-3::after{
+    background: url('images/pexels-negative-space-34140.jpg');
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+}
+.service-box-4::after{
+    background: url('images/pexels-tranmautritam-326503.jpg');
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+}
+.service-box-1::after,.service-box-2::after,.service-box-3::after,.service-box-4::after{
+    content: '';
+    /* border: 2px solid red ; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('images/pexels-bich-tran-1714341.jpg'); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+
+
+
+.service-box-2 h5,.service-box-3 h5,.service-box-4 h5{
+    
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+.service-box-1 h5{
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.btn-primary{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color:blue;
+    padding: 3px 10px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.service-box-1:hover .box-content{
+    opacity: 1;
+    top: 50%;
+}
+.service-box-1:hover::after{
+opacity: 1;
+transform: scaleX(1);
+}
+.service-box-2:hover .box-content{
+    opacity: 1;
+    top: 50%;
+}
+.service-box-2:hover::after{
+opacity: 1;
+transform: scaleX(1);
+}
+.service-box-3:hover .box-content{
+    opacity: 1;
+    top: 50%;
+}
+.service-box-3:hover::after{
+opacity: 1;
+transform: scaleX(1);
+}
+.service-box-4:hover .box-content{
+    opacity: 1;
+    top: 50%;
+}
+.service-box-4:hover::after{
+opacity: 1;
+transform: scaleX(1);
+}
+
+
+/*  media query */
+@media screen and (max-width:600px) {
+    .header h1{
+        font-size: 40px;
+        /* font-weight: 900; */
+        
+    }
+    .service{
+        padding: 20px;
+    }
+    .header{
+        height: 40vh;
+    }
+    
+}
+@media screen and (min-width:601px) and (max-width:1000px) {
+    .header{
+        height: 50vh;
+    }
+}
+
+@media (orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vh;
+    }
 }
