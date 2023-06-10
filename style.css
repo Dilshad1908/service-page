@@ -6,16 +6,18 @@
 body{
     font-family: 'Lato', sans-serif;
 }
-.navigation{
+.navbg{
     background-color: #b8b8ff;
+   
 }
 .nav-link {
 color: #fff;
+font-weight: bold;
  }
 .header{
-    background: url('images/pexels-tranmautritam-69432.jpg');
+    background: url('images/pexels-photomix-company-230544.jpg');
     height: 85vh;    
-    color: #fff;
+    color:#fff;
     /* width: 100%; */
     background-size: cover;
     background-position: center;
@@ -28,6 +30,7 @@ color: #fff;
     font-weight: 900;
     
 }
+
 .service{
    background-color: #2c698d;
   font-family: sans-serif;
@@ -107,9 +110,6 @@ color: #fff;
 
 }
 
-
-
-
 .service-box-2 h5,.service-box-3 h5,.service-box-4 h5{
     
     color: #ffffff;
@@ -173,33 +173,45 @@ opacity: 1;
 transform: scaleX(1);
 height: 100%;
 }
+.footer a:hover{
+    color: red;
+}
 
 
+/* /////////////  media query //////////// */
 
-/*  media query */
-@media screen and (max-width:600px) {
-    .header h1{
-        font-size: 40px;
-        
-        
-        
+@media screen and (max-width:394px) {
+    .btn-primary{
+        padding: 2px 8px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #fff;
+        border-radius: 10px;
     }
-    .header p{
-       
-        font-size: 70%;
-       
+    
+}
+
+@media screen and (min-width:395px) and (max-width:600px) {
+    /* .header h1{
+        font-size: 40px;                        
     }
+    p{
+       
+        font-size: 80%;
+       
+    } */
     .service{
         padding: 20px;
     }
     .header{
-        height: 50vh;
+        height: 80vh;
     }
     
 }
 @media screen and (min-width:601px) and (max-width:1000px) {
     .header{
-        height: 50vh;
+        height: 70vh;
     }
 }
 
