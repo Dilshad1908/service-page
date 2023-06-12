@@ -4,18 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Lato', sans-serif;
-}
+font-family: 'Poppins', sans-serif;}
 .navbg{
-    background-color: #b8b8ff;
+    background-color: #fff;
    
 }
 .nav-link {
-color: #fff;
+color: rgb(73, 210, 61);
 font-weight: bold;
  }
 .header{
-    background: url('images/pexels-photomix-company-230544.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.516)),url('images/pexels-tranmautritam-69432.jpg');
     height: 85vh;    
     color:#fff;
     /* width: 100%; */
@@ -32,27 +31,38 @@ font-weight: bold;
 }
 
 .service{
-   background-color: #2c698d;
-  font-family: sans-serif;
-  color: #350a27;
+   background-color: #fff;
+   font-family: 'Roboto', sans-serif;
+  
    
 }
 .service h1{
     font-weight: 900;
+    color: rgb(73, 210, 61);
     
 }
 
 .service-box-1,.service-box-2,.service-box-3,.service-box-4{
-    border: 10px solid #18d193;
-    border-radius: 35px; 
-    background-color: #bce1fd;
-    box-shadow: rgba(0, 6, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 8px solid #fff ;
+    box-shadow: rgba(0, 0, 0, 0.361) 0px 3px 8px;
+    border-radius: 30px; 
+    background-color: rgba(73, 210, 61, 0.607);
     position: relative;
 }
 .footer{
-    background-color: #d8d5d5;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+    background-color: #333;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.footer h2{
+    color:rgb(80, 231, 66) ;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: rgb(73, 210, 61);
 }
 .box-content{
     /* border: 3px solid black; */
@@ -63,28 +73,28 @@ font-weight: bold;
     transform: translate(-50%,-50%);
     opacity:0 ;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 .service-box-1::after{
-    background: url('images/pexels-bich-tran-1714341.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.445)), url('images/pexels-bich-tran-1714341.jpg');
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
 }
 .service-box-2::after{
-    background: url('images/pexels-bich-tran-669996.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.445)), url('images/pexels-photomix-company-230544.jpg');
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
 }
 .service-box-3::after{
-    background: url('images/pexels-negative-space-34140.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.445)), url('images/pexels-negative-space-34140.jpg');
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
 }
 .service-box-4::after{
-    background: url('images/pexels-tranmautritam-326503.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.445)), url('images/pexels-tranmautritam-326503.jpg');
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
@@ -104,8 +114,8 @@ font-weight: bold;
     border-radius: 25px;
     opacity: 0;
     z-index: 1;
-    transition: all 0.2s ease-in-out;
-    border: 5px solid #fff;
+    transition: all 0.18s ease-in-out;
+    border: 7px solid #fff;
 
 
 }
@@ -122,19 +132,24 @@ font-weight: bold;
     font-weight: bold;
 }
 .service-box-1:hover,.service-box-2:hover,.service-box-3:hover,.service-box-4:hover{
-    border: 10px solid #FF6D60;
+    border: 7px solid rgb(73, 210, 61);
+    border-radius: 30px;
 }
 .btn-primary{
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    color:blue;
+    color:rgb(73, 210, 61);
     padding: 3px 10px;
     margin-left: 35px;
     font-weight: bold;
     font-size: 20px;
     background-color: #fff;
     border-radius: 25px;
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color:rgb(73, 210, 61) ;
 }
 
 .service-box-1:hover .box-content{
@@ -173,14 +188,21 @@ opacity: 1;
 transform: scaleX(1);
 height: 100%;
 }
-.footer a:hover{
-    color: red;
-}
+
 
 
 /* /////////////  media query //////////// */
 
 @media screen and (max-width:394px) {
+
+    body{
+        font-size: 70%;
+    }
+    .header h1{
+        font-size: 40px;
+        font-weight: 700;
+        
+    }
     .btn-primary{
         padding: 2px 8px;
         margin-left: 20px;
